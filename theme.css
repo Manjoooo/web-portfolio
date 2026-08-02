@@ -207,3 +207,42 @@
 	border-color: #dcecdf !important;
 	color: #284c34 !important;
 }
+
+
+/* 하단 소개 배너 - 불투명한 회색 */
+.green-hire-section {
+	background: #59615c !important;
+	background-color: #59615c !important;
+	background-image: none !important;
+}
+
+/* 기존 파란 오버레이 완전히 제거 */
+.green-hire-section .overlay {
+	background: #59615c !important;
+	background-color: #59615c !important;
+	background-image: none !important;
+	opacity: 1 !important;
+}
+
+.green-hire-section h2,
+.green-hire-section p {
+	color: #ffffff !important;
+}
+
+.green-hire-section h2 span {
+	color: #dcecdf !important;
+}
+
+/* 연락 버튼 */
+.green-hire-section .btn.btn-primary {
+	background: #f1f7f2 !important;
+	border-color: #f1f7f2 !important;
+	color: #355f42 !important;
+}
+
+.green-hire-section .btn.btn-primary:hover,
+.green-hire-section .btn.btn-primary:focus {
+	background: #dcecdf !important;
+	border-color: #dcecdf !important;
+	color: #284c34 !important;
+}
