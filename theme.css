@@ -124,12 +124,20 @@
 	color: var(--green-dark) !important;
 }
 
-/* 증명사진 크기 조절 */
-.profile-photo {
-	background-size: 72% auto !important;
+/* 증명사진 크기 축소 */
+.img-about .profile-photo {
+	background-size: 55% auto !important;
 	background-repeat: no-repeat !important;
 	background-position: center center !important;
 	background-color: #ffffff !important;
+}
+
+/* 모바일 화면 */
+@media (max-width: 767.98px) {
+	.img-about .profile-photo {
+		background-size: 65% auto !important;
+		min-height: 500px;
+	}
 }
 
 /* 원형 스킬 그래프 내부 채움 제거 */
