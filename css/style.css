@@ -9672,3 +9672,22 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+.skill-level {
+	font-size: 14px;
+	font-weight: 600;
+	color: #68b7df;
+	background-color: #eff9fd;
+	padding: 4px 10px;
+	border-radius: 15px;
+	white-space: nowrap;
+}
+
+.progress-wrap .small {
+	line-height: 1.6;
+}
+
+.progress-value .h4 {
+	color: #68b7df;
+	margin-bottom: 0;
+}
