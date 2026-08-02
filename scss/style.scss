@@ -1953,3 +1953,120 @@ textarea.form-control {
     stroke-dashoffset: -136px;
   }
 }
+
+/* =========================================================
+   포트폴리오 녹색 테마
+   ========================================================= */
+
+:root {
+	--portfolio-green: #599468;
+	--portfolio-green-dark: #497d57;
+	--portfolio-green-light: #edf5ef;
+}
+
+/* 텍스트 강조 */
+.text-primary,
+.resume-wrap .date,
+.navbar-brand span,
+.heading-section .subheading,
+.hero-wrap .text .subheading,
+.hero-wrap .text h2 span,
+.ftco-hireme h2 span {
+	color: var(--portfolio-green) !important;
+}
+
+/* 상단 메뉴 활성화 색 */
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link.active,
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
+	color: var(--portfolio-green) !important;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link span::before {
+	background: var(--portfolio-green) !important;
+}
+
+/* 브랜드 원형 배경 */
+.navbar-brand span {
+	background: var(--portfolio-green) !important;
+	color: #ffffff !important;
+}
+
+/* 기본 버튼 */
+.btn.btn-primary {
+	background: var(--portfolio-green) !important;
+	border-color: var(--portfolio-green) !important;
+	color: #ffffff !important;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus,
+.btn.btn-primary:active {
+	background: var(--portfolio-green-dark) !important;
+	border-color: var(--portfolio-green-dark) !important;
+	color: #ffffff !important;
+}
+
+/* 프로젝트 발표자료 테두리 버튼 */
+.btn.btn-outline-secondary {
+	color: var(--portfolio-green) !important;
+	border-color: var(--portfolio-green) !important;
+	background: transparent !important;
+}
+
+.btn.btn-outline-secondary:hover,
+.btn.btn-outline-secondary:focus {
+	color: #ffffff !important;
+	background: var(--portfolio-green) !important;
+	border-color: var(--portfolio-green) !important;
+}
+
+/* 숫자 및 아이콘 */
+.ftco-counter .text strong.number,
+.resume-wrap .icon,
+.contact-section .box .icon {
+	color: #ffffff !important;
+	background: var(--portfolio-green) !important;
+}
+
+/* 진행 막대 */
+.progress-bar {
+	background-color: var(--portfolio-green) !important;
+}
+
+.border-primary {
+	border-color: var(--portfolio-green) !important;
+}
+
+.progress-value .h4 {
+	color: var(--portfolio-green) !important;
+}
+
+/* 스킬 수준 배지 */
+.skill-level {
+	color: var(--portfolio-green-dark) !important;
+	background: var(--portfolio-green-light) !important;
+}
+
+/* 왼쪽 목차 */
+#navi li a.current {
+	color: var(--portfolio-green) !important;
+}
+
+#navi li a.current::after {
+	background: var(--portfolio-green) !important;
+}
+
+/* 프로젝트 카드 오버레이 */
+.project .overlay {
+	background: var(--portfolio-green) !important;
+}
+
+/* 일반 링크 */
+a {
+	color: var(--portfolio-green);
+}
+
+a:hover,
+a:focus {
+	color: var(--portfolio-green-dark);
+}
