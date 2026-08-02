@@ -1,0 +1,125 @@
+/* 김민주 포트폴리오 녹색 테마 */
+:root {
+	--green-deep: #284c34;
+	--green-dark: #355f42;
+	--green-main: #599468;
+	--green-soft: #7eae89;
+	--green-light: #dcecdf;
+	--green-pale: #f1f7f2;
+}
+
+/* 로고 */
+.navbar-brand::after {
+	background: var(--green-main) !important;
+}
+
+/* 상단 메뉴 */
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link.active,
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover,
+.ftco-navbar-light.scrolled .nav-item.active > a,
+.ftco-navbar-light.scrolled .nav-link.active {
+	color: var(--green-dark) !important;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link span::before {
+	background: var(--green-soft) !important;
+}
+
+/* 첫 화면 */
+.hero-wrap .overlay {
+	background: var(--green-light) !important;
+	opacity: 0.62 !important;
+}
+
+.slider-text .subheading,
+.slider-text h2 span,
+.mouse-wheel {
+	color: var(--green-main) !important;
+}
+
+.mouse-icon::after {
+	background: var(--green-pale) !important;
+}
+
+/* 공통 강조 */
+.text-primary,
+.page .heading,
+.resume-wrap .date,
+.ftco-about .counter-wrap .text p span.number,
+.ftco-counter .text strong.number,
+#navi li a.current {
+	color: var(--green-main) !important;
+}
+
+#navi li a.current::after {
+	background: var(--green-soft) !important;
+}
+
+/* 아이콘 */
+.resume-wrap .icon,
+.contact-section .box .icon {
+	background: var(--green-main) !important;
+}
+
+/* 버튼 */
+.btn.btn-primary {
+	background: var(--green-main) !important;
+	border-color: var(--green-main) !important;
+	color: #ffffff !important;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus,
+.btn.btn-primary:active {
+	background: var(--green-deep) !important;
+	border-color: var(--green-deep) !important;
+	color: #ffffff !important;
+}
+
+.btn.btn-outline-secondary {
+	color: var(--green-dark) !important;
+	border-color: var(--green-soft) !important;
+	background: #ffffff !important;
+}
+
+.btn.btn-outline-secondary:hover,
+.btn.btn-outline-secondary:focus {
+	background: var(--green-main) !important;
+	border-color: var(--green-main) !important;
+	color: #ffffff !important;
+}
+
+/* 스킬 */
+.progress-bar {
+	background-color: var(--green-main) !important;
+}
+
+.border-primary {
+	border-color: var(--green-main) !important;
+}
+
+.progress-value .h4,
+.progress-value .h2 {
+	color: var(--green-dark) !important;
+}
+
+.skill-level {
+	color: var(--green-dark) !important;
+	background: var(--green-pale) !important;
+	border: 1px solid var(--green-light);
+}
+
+/* 수상 */
+#awards-section {
+	background: var(--green-pale) !important;
+}
+
+/* 사이드 프로젝트 */
+.project .overlay {
+	background: var(--green-dark) !important;
+}
+
+/* 연락처 */
+.contact-section .contact-info p a {
+	color: var(--green-dark) !important;
+}
