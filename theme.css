@@ -123,3 +123,11 @@
 .contact-section .contact-info p a {
 	color: var(--green-dark) !important;
 }
+
+/* 증명사진 크기 조절 */
+.profile-photo {
+	background-size: 72% auto !important;
+	background-repeat: no-repeat !important;
+	background-position: center center !important;
+	background-color: #ffffff !important;
+}
