@@ -246,3 +246,30 @@
 	border-color: #dcecdf !important;
 	color: #284c34 !important;
 }
+
+/* 사이드 프로젝트 카드 전체 클릭 */
+.project-card-link {
+	display: block;
+	text-decoration: none !important;
+	color: inherit !important;
+	cursor: pointer;
+}
+
+.project-card-link:hover,
+.project-card-link:focus {
+	text-decoration: none !important;
+}
+
+.project-card-link .project {
+	position: relative;
+}
+
+.project-card-link .text {
+	position: relative;
+	z-index: 3;
+}
+
+.project-card-link .text h3,
+.project-card-link .text span {
+	color: #ffffff !important;
+}
