@@ -281,3 +281,44 @@
 .project-card-link .text span {
 	color: #ffffff !important;
 }
+/* Side Projects 카드 전체 클릭 */
+.project-card-link {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: inherit !important;
+	text-decoration: none !important;
+	cursor: pointer;
+}
+
+.project-card-link:hover,
+.project-card-link:focus,
+.project-card-link:active {
+	color: inherit !important;
+	text-decoration: none !important;
+}
+
+.project-card-link .project {
+	position: relative;
+	width: 100%;
+	height: 350px;
+}
+
+.project-card-link .overlay {
+	position: absolute;
+	z-index: 1;
+}
+
+.project-card-link .text {
+	position: relative;
+	z-index: 3;
+}
+
+.project-card-link .text h3,
+.project-card-link .text span {
+	color: #ffffff !important;
+}
+
+.project-card-link:hover .overlay {
+	opacity: 0.9 !important;
+}
