@@ -20,6 +20,72 @@
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="theme.css">
+
+	<style>
+		/* ===== Portfolio color refinement =====
+		   기존 초록 계열은 유지하면서 한 톤 더 진하게 */
+		:root {
+			--portfolio-green: #2F7D5B;
+			--portfolio-body: #444444;
+		}
+
+		/* 초록 포인트 컬러 */
+		.text-primary,
+		.ftco-navbar-light .navbar-brand span,
+		.navbar-brand span,
+		.resume-wrap .icon,
+		.progress-bar,
+		.skill-level {
+			color: var(--portfolio-green) !important;
+		}
+
+		.resume-wrap .icon,
+		.btn-primary,
+		.bg-primary,
+		.progress-bar {
+			background-color: var(--portfolio-green) !important;
+		}
+
+		.border-primary,
+		.btn-outline-primary {
+			border-color: var(--portfolio-green) !important;
+		}
+
+		.btn-primary:hover,
+		.btn-primary:focus,
+		.btn-primary:active {
+			background-color: #286D50 !important;
+			border-color: #286D50 !important;
+		}
+
+		a,
+		.heading-section .subheading {
+			color: var(--portfolio-green);
+		}
+
+		/* 설명/본문은 더 선명한 진회색 */
+		body,
+		p,
+		.text-gray,
+		.small,
+		.resume-wrap .text p,
+		.resume-wrap .text > div,
+		.about-info li span,
+		.heading-section p,
+		.contact-info p,
+		.ftco-footer p {
+			color: var(--portfolio-body) !important;
+		}
+
+		/* 제목/강조 문구는 기존 대비 유지 */
+		h1, h2, h3, h4, h5, h6,
+		.text-dark,
+		.resume-wrap .text h2,
+		.heading-section h2 {
+			color: #2F2F2F;
+		}
+	</style>
+
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -1499,3 +1565,4 @@
 </body>
 
 </html>
+	
