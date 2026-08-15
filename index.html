@@ -86,6 +86,45 @@
 		}
 	</style>
 
+
+	<style>
+		.navbar-brand span {
+			background: #78A98D !important;
+			color: #2F7D5B !important;
+		}
+	</style>
+
+
+	<style>
+		/* Side Projects CTA: 설명과 확실히 구분되는 둥근 버튼 */
+		.project-action-pill {
+			display: inline-block;
+			margin-top: 10px;
+			padding: 8px 16px;
+			border-radius: 999px;
+			background: rgba(47, 125, 91, 0.92);
+			color: #ffffff !important;
+			font-size: 13px;
+			font-weight: 600;
+			line-height: 1.2;
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.14);
+			transition: all 0.2s ease;
+		}
+
+		.project-card-link:hover .project-action-pill {
+			transform: translateY(-1px);
+			background: #286D50;
+		}
+
+		/* 긴 상단 메뉴가 한 줄에 자연스럽게 보이도록 간격만 살짝 줄임 */
+		@media (min-width: 992px) {
+			#ftco-nav .navbar-nav .nav-link {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		}
+	</style>
+
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -127,6 +166,24 @@
 					<li class="nav-item">
 						<a href="#education-section" class="nav-link">
 							<span>Education</span>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#training-section" class="nav-link">
+							<span>Training</span>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#experience-section" class="nav-link">
+							<span>Experience</span>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#skills-section" class="nav-link">
+							<span>Skills</span>
 						</a>
 					</li>
 
@@ -343,6 +400,7 @@
 					<nav id="navi">
 						<ul>
 							<li><a href="#page-1">Education</a></li>
+							<li><a href="#training-section">Training</a></li>
 							<li><a href="#page-2">Experience</a></li>
 							<li><a href="#page-3">Skills</a></li>
 							<li><a href="#page-4">Projects</a></li>
@@ -404,7 +462,7 @@
 
 
 					<!-- Training : Education과 Work Experience 사이 -->
-					<div class="page">
+					<div class="page" id="training-section">
 						<h2 class="heading">Training</h2>
 
 						<!-- 최근 교육부터 -->
@@ -460,8 +518,8 @@
 					</div>
 
 
-					<div id="page-2" class="page two">
-						<h2 class="heading">Work Experience</h2>
+					<div id="page-2" class="page two" data-section="experience">
+						<h2 id="experience-section" class="heading">Work Experience</h2>
 
 						<div class="resume-wrap d-flex ftco-animate">
 
@@ -503,8 +561,8 @@
 					</div>
 
 
-					<div id="page-3" class="page three">
-						<h2 class="heading">Skills</h2>
+					<div id="page-3" class="page three" data-section="skills">
+						<h2 id="skills-section" class="heading">Skills</h2>
 
 						<div class="row progress-circle mb-5">
 
@@ -1185,7 +1243,7 @@
 
 									<br><br>
 
-									분석 보고서 다운로드
+									<span class="project-action-pill">분석 보고서 다운로드</span>
 								</span>
 
 							</div>
@@ -1219,7 +1277,7 @@
 
 									<br><br>
 
-									분석 포스터 다운로드
+									<span class="project-action-pill">분석 포스터 다운로드</span>
 								</span>
 
 							</div>
@@ -1253,7 +1311,7 @@
 
 									<br><br>
 
-									프로젝트 요약 다운로드
+									<span class="project-action-pill">프로젝트 요약 다운로드</span>
 								</span>
 
 							</div>
@@ -1288,7 +1346,7 @@
 
 									<br><br>
 
-									GitHub 보기
+									<span class="project-action-pill">GitHub 보기</span>
 								</span>
 
 							</div>
@@ -1565,4 +1623,3 @@
 </body>
 
 </html>
-	
