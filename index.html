@@ -125,6 +125,118 @@
 		}
 	</style>
 
+	<style>
+		/* ===== Portfolio focus / project taxonomy ===== */
+		.portfolio-focus-line {
+			margin-top: 14px;
+			font-size: 14px;
+			font-weight: 600;
+			letter-spacing: 0.2px;
+			color: #2F2F2F !important;
+		}
+
+		.portfolio-focus-line span {
+			display: block;
+			margin-top: 4px;
+			font-size: 13px;
+			font-weight: 500;
+			color: var(--portfolio-green) !important;
+		}
+
+		.project-intro {
+			margin: 0 0 34px 0;
+			padding: 26px 28px;
+			border: 1px solid rgba(47, 125, 91, 0.14);
+			border-radius: 18px;
+			background: #ffffff;
+			box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+		}
+
+		.project-intro-copy {
+			max-width: 760px;
+			margin: 0 0 20px 0;
+			font-size: 15px;
+			line-height: 1.8;
+			color: var(--portfolio-body) !important;
+		}
+
+		.project-focus-grid {
+			display: grid;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+			gap: 14px;
+		}
+
+		.project-focus-card {
+			padding: 18px 18px 16px;
+			border-radius: 14px;
+			background: rgba(47, 125, 91, 0.055);
+			border: 1px solid rgba(47, 125, 91, 0.10);
+		}
+
+		.project-focus-card strong {
+			display: block;
+			margin-bottom: 8px;
+			font-size: 13px;
+			letter-spacing: 0.7px;
+			color: var(--portfolio-green);
+		}
+
+		.project-focus-card span {
+			display: block;
+			font-size: 13px;
+			line-height: 1.6;
+			color: var(--portfolio-body);
+		}
+
+		.project-engineering-note {
+			margin-top: 14px;
+			padding-top: 14px;
+			border-top: 1px solid rgba(47, 125, 91, 0.12);
+			font-size: 13px;
+			color: var(--portfolio-body);
+		}
+
+		.project-engineering-note strong {
+			color: var(--portfolio-green);
+		}
+
+		.project-category {
+			display: inline-block;
+			margin-bottom: 7px;
+			font-size: 12px;
+			font-weight: 700;
+			letter-spacing: 0.8px;
+			text-transform: uppercase;
+			color: var(--portfolio-green);
+		}
+
+		.project-tags {
+			margin: 8px 0 9px;
+		}
+
+		.project-tag {
+			display: inline-block;
+			margin: 0 5px 5px 0;
+			padding: 4px 9px;
+			border-radius: 999px;
+			background: rgba(47, 125, 91, 0.08);
+			color: #3E5F50;
+			font-size: 11px;
+			font-weight: 500;
+			line-height: 1.3;
+		}
+
+		@media (max-width: 767.98px) {
+			.project-focus-grid {
+				grid-template-columns: 1fr;
+			}
+
+			.project-intro {
+				padding: 22px 20px;
+			}
+		}
+	</style>
+
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -256,8 +368,13 @@
 							<h2 class="mb-4">About Me</h2>
 
 							<p>
-								데이터 속 패턴을 발견하고, 통계와 AI로 현실의 문제를 해결하는
-								통계학 석사 김민주입니다.
+								<strong>통계적 모델링과 머신러닝을 기반으로 데이터를 분석하고,</strong><br>
+								분석 결과를 실제 의사결정으로 연결하는 데이터 분석가 김민주입니다.
+							</p>
+
+							<p class="portfolio-focus-line mb-0">
+								Statistical Modeling · Machine Learning · Data Analysis
+								<span>+ Data Engineering Experience</span>
 							</p>
 
 							<ul class="about-info mt-4 px-md-0 px-2">
@@ -823,68 +940,35 @@
 					<div id="page-4" class="page four">
 						<h2 id="projects-section" class="heading">Projects</h2>
 
-						<!-- 2026.08 LogiUs - 대표 프로젝트 최상단 -->
-						<div class="resume-wrap d-flex ftco-animate">
+						<div class="project-intro ftco-animate">
+							<p class="project-intro-copy">
+								통계적 모델링과 머신러닝을 중심으로 공공·의료·지역 데이터를 활용한
+								문제 해결 프로젝트를 수행했습니다. 분석 결과를 실제 의사결정으로 연결하는 것을
+								중요하게 생각하며, 데이터 처리 과정을 이해하기 위해 파이프라인 구축 경험까지 확장했습니다.
+							</p>
 
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
+							<div class="project-focus-grid">
+								<div class="project-focus-card">
+									<strong>STATISTICAL MODELING</strong>
+									<span>회귀분석 · 베이지안 분석 · 이상치 탐지 · 통계적 검증</span>
+								</div>
+
+								<div class="project-focus-card">
+									<strong>MACHINE LEARNING</strong>
+									<span>예측 · 분류 · 모델 비교 · 성능 평가</span>
+								</div>
+
+								<div class="project-focus-card">
+									<strong>DATA ANALYSIS</strong>
+									<span>공공 · 의료 · 공간 데이터 기반 지표 설계 및 의사결정</span>
+								</div>
 							</div>
 
-							<div class="text pl-3">
-
-								<span class="date">2026.08</span>
-
-								<div class="d-flex align-items-start flex-wrap">
-
-									<h2>
-										LogiUs · T-TRUST AI
-									</h2>
-
-									<div>
-										&nbsp;
-
-										<a class="btn btn-outline-secondary"
-											target="_blank"
-											rel="noopener noreferrer"
-											href="https://github.com/Manjoooo/LogiUs">
-											GitHub
-										</a>
-
-										&nbsp;
-
-										<a class="btn btn-outline-secondary"
-											target="_blank"
-											rel="noopener noreferrer"
-											href="카카오모빌리티_LogiUs_결과보고서.pdf">
-											발표자료
-										</a>
-									</div>
-
-								</div>
-
-								<span class="position">
-									MOVE AI Challenge · 카카오모빌리티 트랙 · Developer
-								</span>
-
-								<div>
-									<b class="text-dark">개발 내용 : </b>
-									AI 음성 배차, 현장 제보, T-Check 신뢰도, 실시간 관제 기능을 포함한 화물운송 플랫폼 MVP
-								</div>
-
-								<div>
-									<b class="text-dark">본인 역할 : </b>
-									개발 담당으로 차주·화주·관리자 서비스 화면 구현 및 AI 기능 연동
-								</div>
-
-								<p>
-									화주·주선사·차주 간 정보 단절과 운송 중 돌발상황 대응 문제를 해결하기 위해
-									지오펜싱·실시간 운송정보·AI 음성 입력을 결합한 화물운송 플랫폼을 구현했습니다.
-									Google AI Studio 기반 Gemini API를 활용해 자연어 입력을 서비스 기능과 연결했습니다.
-								</p>
-
+							<div class="project-engineering-note">
+								<strong>+ Data Engineering Experience</strong>
+								&nbsp; Kafka · Spark · Iceberg 기반 데이터 파이프라인 구축 경험
 							</div>
 						</div>
-
 
 						<div class="resume-wrap d-flex ftco-animate">
 
@@ -895,6 +979,7 @@
 							<div class="text pl-3">
 
 								<span class="date">2025.05-2026.06</span>
+								<span class="project-category">Statistical Machine Learning</span>
 
 								<div class="d-flex align-items-start flex-wrap">
 
@@ -928,6 +1013,13 @@
 									석사학위 논문 · 통계적 머신러닝
 								</span>
 
+								<div class="project-tags">
+									<span class="project-tag">SVDD</span>
+									<span class="project-tag">Mixed Kernel</span>
+									<span class="project-tag">Interaction Screening</span>
+									<span class="project-tag">Simulation</span>
+								</div>
+
 								<div>
 									<b class="text-dark">분석 방법 : </b>
 									SVDD, 혼합 커널, 교호작용 스크리닝, 모의실험
@@ -957,6 +1049,7 @@
 							<div class="text pl-3">
 
 								<span class="date">2026.03</span>
+								<span class="project-category">Spatial Data Analysis</span>
 
 								<div class="d-flex align-items-start flex-wrap">
 
@@ -980,6 +1073,12 @@
 								<span class="position">
 									공공데이터 · 공간 네트워크 분석 · 수상 프로젝트
 								</span>
+
+								<div class="project-tags">
+									<span class="project-tag">Network Analysis</span>
+									<span class="project-tag">Spatial Analysis</span>
+									<span class="project-tag">Risk Scoring</span>
+								</div>
 
 								<div>
 									<b class="text-dark">분석 방법 : </b>
@@ -1010,6 +1109,7 @@
 							<div class="text pl-3">
 
 								<span class="date">2025.07</span>
+								<span class="project-category">Statistical Data Analysis</span>
 
 								<div class="d-flex align-items-start flex-wrap">
 
@@ -1033,6 +1133,12 @@
 								<span class="position">
 									공공주택 · 지역 데이터 분석
 								</span>
+
+								<div class="project-tags">
+									<span class="project-tag">Regression</span>
+									<span class="project-tag">Regional Analysis</span>
+									<span class="project-tag">Risk Scoring</span>
+								</div>
 
 								<div>
 									<b class="text-dark">분석 방법 : </b>
@@ -1063,6 +1169,7 @@
 							<div class="text pl-3">
 
 								<span class="date">2023.02</span>
+								<span class="project-category">Healthcare · Policy Data Analysis</span>
 
 								<div class="d-flex align-items-start flex-wrap">
 
@@ -1087,6 +1194,12 @@
 									국가생명윤리정책원 · 정책 데이터 분석
 								</span>
 
+								<div class="project-tags">
+									<span class="project-tag">Data Preprocessing</span>
+									<span class="project-tag">Indicator Design</span>
+									<span class="project-tag">Scoring</span>
+								</div>
+
 								<div>
 									<b class="text-dark">분석 방법 : </b>
 									데이터 전처리, 변수 선정, 다중공선성 검토, 지표 설계, 점수화
@@ -1105,6 +1218,76 @@
 
 							</div>
 						</div>
+						<!-- 2026.08 LogiUs - 대표 프로젝트 최상단 -->
+						<div class="resume-wrap d-flex ftco-animate">
+
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="flaticon-ideas"></span>
+							</div>
+
+							<div class="text pl-3">
+
+								<span class="date">2026.08</span>
+								<span class="project-category">AI Application Development</span>
+
+								<div class="d-flex align-items-start flex-wrap">
+
+									<h2>
+										LogiUs · T-TRUST AI
+									</h2>
+
+									<div>
+										&nbsp;
+
+										<a class="btn btn-outline-secondary"
+											target="_blank"
+											rel="noopener noreferrer"
+											href="https://github.com/Manjoooo/LogiUs">
+											GitHub
+										</a>
+
+										&nbsp;
+
+										<a class="btn btn-outline-secondary"
+											target="_blank"
+											rel="noopener noreferrer"
+											href="카카오모빌리티_LogiUs_결과보고서.pdf">
+											발표자료
+										</a>
+									</div>
+
+								</div>
+
+								<span class="position">
+									MOVE AI Challenge · 카카오모빌리티 트랙 · Developer
+								</span>
+
+								<div class="project-tags">
+									<span class="project-tag">Gemini API</span>
+									<span class="project-tag">Geofencing</span>
+									<span class="project-tag">MVP Development</span>
+								</div>
+
+								<div>
+									<b class="text-dark">개발 내용 : </b>
+									AI 음성 배차, 현장 제보, T-Check 신뢰도, 실시간 관제 기능을 포함한 화물운송 플랫폼 MVP
+								</div>
+
+								<div>
+									<b class="text-dark">본인 역할 : </b>
+									개발 담당으로 차주·화주·관리자 서비스 화면 구현 및 AI 기능 연동
+								</div>
+
+								<p>
+									화주·주선사·차주 간 정보 단절과 운송 중 돌발상황 대응 문제를 해결하기 위해
+									지오펜싱·실시간 운송정보·AI 음성 입력을 결합한 화물운송 플랫폼을 구현했습니다.
+									Google AI Studio 기반 Gemini API를 활용해 자연어 입력을 서비스 기능과 연결했습니다.
+								</p>
+
+							</div>
+						</div>
+
+
 
 					</div>
 
